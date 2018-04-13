@@ -19,7 +19,7 @@ int main(string[] args) {
         repo_path = curr_path[$ - 3 + repo_name.length .. $] ~ repo_name;
 
     string repo_url = "https://" ~ join(repo_path, '/') ~ ".git";
-    string git_cmd = "git clone " ~ join(repo_url ~ args[2 .. $]);
+    string git_cmd = "git clone " ~ join(repo_url ~ args[2 .. $], " ");
 
     writeln(git_cmd);
 
