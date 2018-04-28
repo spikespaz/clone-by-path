@@ -1,3 +1,4 @@
 #! /bin/sh
 dmd cbp.d -O -release -inline -boundscheck=off
-rm cbp.o
+[ -e cbp.o ] && rm cbp.o
+[ -e cbp.obj ] && rm cbp.obj
