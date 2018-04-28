@@ -15,13 +15,14 @@ int main(string[] args) {
     string[] repo_path;
 
     if (repo_name.length > 3) repo_path = repo_name;
-    else
-        repo_path = curr_path[$ - 3 + repo_name.length .. $] ~ repo_name;
+    else repo_path = curr_path[$ - 3 + repo_name.length .. $] ~ repo_name;
 
     string repo_url = "https://" ~ join(repo_path, '/') ~ ".git";
-    string git_cmd = "git clone " ~ join(repo_url ~ args[1 .. $], " ");
 
-    writeln(git_cmd);
+    const int start_arg = (args.length > 2 && args[2][0] != '-') + 1;
+    string git_cmd = "git clone " ~ join(repo_url ~ args[start_arg .. $], ' ');
+
+    writeln("> " ~ git_cmd);
 
     auto git_pid = spawnShell(git_cmd, stdin, stdout, stderr);
 
