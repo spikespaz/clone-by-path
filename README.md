@@ -38,3 +38,13 @@ There are several cases that can be explained to help you understand how the com
      - The program will assume that the text before the first `/` is the domain.
      - The program will assume that the text after the first `/` and before the second `/` is the author.
      - The program will assume that the text after the last `/` is the repository name.
+
+## Donations
+
+If you would like to show appreciation for my work, I would gladly accept a small donation!
+
+I will accept donations through PayPal.Me, Buy Me a Coffee, or Patreon.
+
+[![Buy Me a Coffee](https://i.imgur.com/fN422E7.png)](https://buymeacoffee.com/spikespaz)
+[![PayPal.Me](https://i.imgur.com/JWkunGi.png)](https://paypal.me/spikespaz)
+[![Patreon](https://i.imgur.com/K05b2RO.png)](https://patreon.com/spikespaz)
