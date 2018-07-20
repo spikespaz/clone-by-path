@@ -1,4 +1,4 @@
 #! /bin/sh
-dmd cbp.d -O -release -inline -boundscheck=off
+ldc2 cbp.d -i -O3 -ffast-math -release
 [ -e cbp.o ] && rm cbp.o
 [ -e cbp.obj ] && rm cbp.obj
