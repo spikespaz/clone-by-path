@@ -27,8 +27,7 @@ int main(string[] args) {
 
     writeln("> " ~ git_cmd); // Tell the user what the result is
 
-    // auto git_pid = spawnShell(git_cmd, stdin, stdout, stderr); // Call that and get the pid
+    auto git_pid = spawnShell(git_cmd, stdin, stdout, stderr); // Call that and get the pid
 
-    // return wait(git_pid); // Wait for the clone to complete and return with pid exit status
-    return 1;
+    return wait(git_pid); // Wait for the clone to complete and return with pid exit status
 }
