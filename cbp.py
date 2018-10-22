@@ -25,7 +25,7 @@ def main():
 
     print(">", *git_cmd)
 
-    git_pid = subprocess.call(git_cmd, shell=True)
+    git_pid = subprocess.call(git_cmd)
 
     sys.exit(git_pid)
 
