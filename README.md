@@ -3,6 +3,8 @@ A small CLI tool to infer the clone URL by the current path and arguments.
 
 ## Setup
 
+There are now two versions. One is in Python, one is in D. If you're a static-typed guy, follow the instructions below. But if you have Python, just run `pip install cbp` and continue to the next section, [Usage](#usage).
+
 Linux, place the `cbp` file in `/usr/bin/` and make it executable with `sudo chmod +x /usr/bin/cbp`.
 
 Windows, save `cbp.exe` somewhere and expose its location to your system PATH environment variable.
