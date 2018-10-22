@@ -16,7 +16,7 @@ int main(string[] args) {
 
     if (repo_name.length == 1 && repo_name[0] == ".") // If the command is executed as the current directory
         repo_path = curr_path[$ - 3 .. $];
-    else if (repo_name.length > 3)
+    else if (repo_name.length >= 3)
         repo_path = repo_name; // Includes more than domain, owner, repo
     else
         repo_path = curr_path[$ - 3 + repo_name.length .. $] ~ repo_name; // Incomplete path, use parts of cwd
