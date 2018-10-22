@@ -5,7 +5,7 @@ with open("README.md") as readme:
 
 setup(
     name="cbp",
-    version="1.1.2",
+    version="1.1.3",
     author="spikespaz",
     author_email="support@spikespaz.com",
     description="A small CLI tool to infer the clone URL by the current path and arguments.",
