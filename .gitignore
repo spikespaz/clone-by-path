@@ -10,3 +10,8 @@ cbp
 # Python
 *.egg-info/
 dist/
+
+
+# Added by cargo
+
+/target
